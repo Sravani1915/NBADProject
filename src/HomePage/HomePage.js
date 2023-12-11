@@ -60,7 +60,7 @@ function HomePage() {
 
   const fetchData = (year, month, userId) => {
     axios
-      .get(`http://localhost:3002/api/get-budgets/${year}/${month}/${userId}`)
+      .get(`http://45.76.253.123:3002/api/get-budgets/${year}/${month}/${userId}`)
       .then((response) => {
         setBudgets(response.data);
       })
@@ -73,7 +73,7 @@ function HomePage() {
     const storedUserId = localStorage.getItem("userId");
     axios
       .get(
-        `http://localhost:3002/api/get-table-data/${selectedYear}/${storedUserId}`
+        `http://45.76.253.123:3002/api/get-table-data/${selectedYear}/${storedUserId}`
       )
       .then((response) => {
         setTableData(response.data);
@@ -85,7 +85,7 @@ function HomePage() {
 
   const fetchUsedCategories = () => {
     axios
-      .get("http://localhost:3002/api/get-all-categories")
+      .get("http://45.76.253.123:3002/api/get-all-categories")
       .then((response) => {
         setUsedCategories(response.data);
         // Assuming you want to select the first category by default

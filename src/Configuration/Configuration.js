@@ -13,7 +13,7 @@ function ConfigurePage({ updateHomePageData }) {
   useEffect(() => {
     const fetchAllCategories = async () => {
       try {
-        const response = await axios.get('http://localhost:3002/api/get-all-categories');
+        const response = await axios.get('http://45.76.253.123:3002/api/get-all-categories');
         setAllCategories(response.data);
       } catch (error) {
         console.error('Error fetching categories:', error);
@@ -43,7 +43,7 @@ function ConfigurePage({ updateHomePageData }) {
     };
 
     try {
-      await axios.post('http://localhost:3002/api/configure-budget', budgetData);
+      await axios.post('http://45.76.253.123:3002/api/configure-budget', budgetData);
 
       if (typeof updateHomePageData === 'function') {
         updateHomePageData();

@@ -18,7 +18,7 @@ const BudgetDetails = () => {
 
   const fetchUsedCategories = async () => {
     try {
-      const response = await axios.get("http://localhost:3002/api/get-all-categories");
+      const response = await axios.get("http://45.76.253.123:3002/api/get-all-categories");
       setUsedCategories(response.data);
       // Assuming you want to select the first category by default
       setUsedSelectedCategory(response.data[0] || "");
@@ -44,7 +44,7 @@ const BudgetDetails = () => {
     };
 
     try {
-      await axios.post("http://localhost:3002/api/enter-used-budget", payload);
+      await axios.post("http://45.76.253.123:3002/api/enter-used-budget", payload);
       console.log("Used Budget update successful");
       // You might want to call fetchData here or handle the success as needed
     } catch (error) {
