@@ -1,6 +1,102 @@
-# Getting Started with Create React App
+# Personal Budget Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a personal budget management application built using React for the front end and Express with MySQL for the backend. The app allows users to manage their budget by providing features such as user authentication, configuring allocated and used budgets, and visualization dashboards.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [Available Scripts](#available-scripts)
+
+## Features
+
+- **About Page:** Gives an overview of what to expect from the website from a user point of view.
+- **User Authentication:** Includes a login and register page for user authentication.
+- **Configuration Page:** Allows users to configure allocated budget and used budgets.
+- **Dashboards:** Visualizations like bar and pie graphs and tables to help users track and manage their budget.
+- **Logout:** Provides a secure way for users to log out.
+
+## Technologies Used
+
+- **Frontend:**
+  - React
+
+- **Backend:**
+  - Express.js
+  - MySQL
+
+- **Other Technologies:**
+  - CORS
+  - Body-parser
+  - JWT (JSON Web Tokens)
+  - Compression
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- MySQL database
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/Sravani1915/NBADProject.git
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    cd NBADProject
+    npm install
+    ```
+
+## Configuration
+
+1. Set up a MySQL database and configure the connection details in the backend.
+2. Create a `.env` file in the backend directory and add the necessary environment variables.
+
+## Usage
+
+1. Start the backend server:
+
+    ```bash
+    cd nbadproject
+    node server.js
+    ```
+
+2. Start the React app:
+
+    ```bash
+    cd nbadproject
+    npm start
+    ```
+
+3. Open the app in your browser: [http://155.138.211.107:3000](http://155.138.211.107:3000)
+
+## API Endpoints
+
+- `/api/login`: User login endpoint.
+- `/api/register`: User registration endpoint.
+- `/api/api/get-all-categories`: Endpoint for fetching all categories
+- `/api/configure-budget`: Endpoint to configure the budget
+- `/api/get-table-data`: Endpoint to get table data
+- `/api/enter-used-budget`: Endpoint to get the used budget
+
+
+## Contributing
+
+Feel free to contribute to the project. Fork the repository, make changes, and submit a pull request.
+
 
 ## Available Scripts
 
@@ -29,42 +125,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
